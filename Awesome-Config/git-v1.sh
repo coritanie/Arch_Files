@@ -15,14 +15,29 @@ set -e
 #
 ##################################################################################################################
 
-echo "Installing the software ArcoLinux uses in .bashrc"
+# checking if I have the latest files from github
+echo "Checking for newer files online first"
+git pull
 
-sudo pacman -S --noconfirm --needed expac
-sudo pacman -S --noconfirm --needed hwinfo
-sudo pacman -S --noconfirm --needed reflector
-sudo pacman -S --noconfirm --needed youtube-dl
+# Below command will backup everything inside the project folder
+git add --all .
+
+# Give a comment to the commit if you want
+echo "####################################"
+echo "Write your commit comment!"
+echo "####################################"
+
+read input
+
+# Committing to the local repository with a message containing the time details and commit text
+
+git commit -m "$input"
+
+# Push the local files to github
+
+git push -u origin master
 
 
 echo "################################################################"
-echo "###                  software installed                     ####"
+echo "###################    Git Push Done      ######################"
 echo "################################################################"
