@@ -1,2 +1,2 @@
 
-#Awesome Setup
+#General setup files
