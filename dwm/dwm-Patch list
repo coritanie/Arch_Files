@@ -1,0 +1,177 @@
+
+    activetagindicatorbar           Changes the rectangle indicating if a tag is used 
+    actualfullscreen                Toggle fullscreen for a window, instead of toggling the status bar and the monocle layout
+    alpha                           Allow dwm to have translucent bars
+    alternativetags                 Introduces alternative tags            
+    alttagsdecoration               Provides the ability to use an alternative text for tags
+    alwayscenter                    All floating windows are centered, like the center patch, but without a rule
+    alwaysfullscreen                Do not allow the focus to drift from the active fullscreen client when using focusstack()
+    alwaysontop                     Choose one floating window to be always-on-top
+    anybar                          Enables dwm to manage external status bars like lemonbar and polybar
+    aspectresize                    Resize the window with its aspect ratio remain constant, use moveresize patch for manual resize
+    attachabove                     Make new clients attach above the selected client
+    attachaside                     New clients get attached and focused instead of always becoming the new master                 
+    attachasideandbelow             Combination between attachaside and attachbelow
+    attachbelow                     New clients attach below the selected client
+    attachbottom                    New clients attach at the bottom of the stack instead of the top
+    attachdirection                 Merge of 1)attachabove,2)attachaside, 3)attachbelow, 4)attachbottom 5)attachtop
+    attachtop                       New client attaches below the last master/on top of the stack
+    autoresize                      Windows that are not visible when requesting a resize/move won't get resized/moved,they will now
+    autostart                       Allows dwm to run autostart.sh
+    awesomebar                      Changes the taskbar to be more like awesome
+    bar height                      Allows user to change dwm's default bar height
+    barpadding                      Adds variables for verticle and horizontal space between the statusbar and the edge of the screen
+    bartabgroups                    Turns the titlebar area into a mfact-respecting tabbar showing each client's title
+    bottomstack                     bstack and bstackhoriz are two stack layouts for dwm
+    canfocusrule                    Add canfocus rule to remove the opportunity to focus certain windows
+    center                          Add an iscentered rule to automatically center clients on the current monitor
+    centeredmaster                  centeredmaster and centeredfloatingmaster are two stack layouts for dwm
+    centeredwindowname              Center the WM_NAME of the currently selected window on the status bar
+    centretitle                     Place the title of focused client in the middle of barwin
+    cfacts                          Provides the ability to assign different weights to clients in their respective stack in tiled layout
+    clientindicators                Draws a dot indicator overlayed on each tag icon for each client
+    clientspertag                   Modifies the tile() layout to limit the maximum number of visible clients per tag
+    cmdcustomize                    Font/color can be set through command line
+    colemak keys                    Colemak keybindings with updated man page to reflect new bindings
+    colorbar                        This patch lets you change the foreground and background color of every statusbar element
+    columns                         Adds an extra layout to dwm called col
+    combo                           Select multiple tags for tag or view by pressing all the right keys as a combo
+    cool autostart                  Execute Autostart in your config.h file.On exit dwm all processes from autostart array will be killed
+    cropwindows                     Create cropped views of existing windows to display only part of them
+    current desktop                 Sets _NET_NUMBER_OF_DESKTOPS and _NET_CURRENT_DESKTOP on root to appropriate values
+    cyclelayouts                    Cycles through all avaiable layouts using MOD-CTRL-, and MOD-CTRL-
+    deck/                           deck is a dwm-layout
+    decoration hints                Make dwm respect _MOTIF_WM_HINTS property, and not draw borders around windows requesting for it
+    defaulttransparency             Adds a default transparency parameter to config.h, which specifies the transparency
+    dmenumatchtop                   Updates the position of dmenu to match that of topbar
+    dragmfact                       Lets you resize the split in the tile layout 
+    dualstatus                      Enable an extra status bar in dwm
+    dwmc                            Simple dwmc client using a fork of fsignal to communicate with dwm
+    dwmfifo                         Adds support for using a command/control FIFO for dwm
+    emptyview                       dwm will start with no tag selected
+    ewmhtags                        Adds EWMH support
+    exresize                        Change size and placement of floating windows using only the keyboard
+    extrabar                        enable an extra status bar in dwm in a similar manner to the dualstatus patch
+    fakefullscreen                  Allow clients to "fullscreen" into space currently given to them
+    fancybar                        Provides a status bar that shows the titles of all visible windows 
+    fibonacci                       adds two new layouts (spiral and dwindle
+    flextile                        Replaces the tile layout with a more flexible version
+    float border color              Allows you to specify a different border color for floating windows
+    floatrules                      This patch adds 5 extra variables to the 'rules' array in config.def.h
+    focusadjacenttag                Provides the ability to focus the tag on the immediate left or right of the currently focused tag
+    focusmaster                     Switch focus to the (tiled) master client from anywhere in the stack
+    focusonclick                    Switch focus only by mouse click and not sloppy
+    focusonnetactive                Sets _NET_ACTIVE_WINDOW client messages to the window
+    focusurgent                     Selects the next window having the urgent flag regardless of the tag it is on
+    freespace                       New variable panel[4] saves space at the borders of the screen for the external panel
+    fsignal                         Send "fake signals" to dwm for handling, using xsetroot
+    fullgaps                        Adds gaps between client windows
+    fullscreen                      Applies the monocle layout with the focused client on top and hides the bar
+    gaplessgrid                     Altered gridmode layout for dwm
+    gaps                            Modifies the tile layout to add a gap between clients
+    gestures                        Adds support for simple mouse gestures to dwm
+    gridmode                        Adds an extra layout mode to dwm called grid
+    hide vacant tags 				Prevents dwm from drawing tags with no clients (i.e. vacant) on the bar		
+    holdbar 						Dwm's built-in status bar is now only shown when HOLDKEY is pressed
+    horizgrid 						Variant of gaplessgrid
+    inplacerotate 					Provides keybindings to perform 'in place' rotations
+    insets							Lets you define custom insets from each edge of the screen
+    ipc 							Implements inter-process communication through a UNIX socket
+    ispermanent 					Property for clients to avoid accidental termination by killclient for sticky windows
+    keychain 						Modifies the key handing so that you can chain multiple bindings together like in sxhkd
+    keycodes						Handling key input is done with keycodes instead of keysyms.
+    keymodes						Provides key modes (like in Vim)
+    keypressrelease 				Lets you specify whether a key binding should be executed at the KeyPress or KeyRelease event
+    killunsel 						Kills all visible clients that are unselected,Only the selected client will remain
+    launcher 						The bar at the top will have buttons that you can click to launch programs and commands
+    layoutmenu 						Adds a context menu for layout switching
+    leftlayout 						Moves the layout symbol in the status bar to the left hand side
+    mark							Provides an mechanism to easily jump between any 2 clients
+    maximize 						Helper functions for maximizing, horizontally and vertically, floating windows using keybindings
+    monocle count 					Monocle_count prints the total number of clients and the number of the currently activated client
+    monoclesymbol 					Always display the the monocle-symbol as defined in config.h if the monocle-layout is activated
+    moveontagmon 					This patch moves floating windows if their monitor gets changed
+    moveplace 						Separates out the 'explace' (rename here 'moveplace') functionality in case that is all you need
+    moveresize 						This changes allows you to move and resize dwm's clients using keyboard bindings
+    movestack 						This plugin allows you to move clients around in the stack and swap them with the master
+    movethrow 						This patch is very similar to moveplace, but with slightly altered functionality
+    movetoedge 						This patch adds functionality to move windows to edges easily
+    mpdcontrol 						Control Music Player Daemon via keybinds
+    multikey 						Allows you to use a single key comb to trigger different functions
+    namedscratchpads 				Allows for the creation of multiple scratchpad windows, each assigned to different keybinds
+    nametag 						This patch allows you to change the names of dwm's tags while it's running
+    nextprev 						Increment or decrement the selected tag
+    nmaster 						This patch restores the ability to have multiple clients in the master area of the tiled layout
+    noborder 						Remove the border when there is only one window visible
+    nodmenu 						Enable modifying dmenu in config.def.h which resulted previously in a compilation error
+    notitle 						Doesn't show the title
+    nrowgrid 						This grid layout gives you the option of determining the row count, which is set by nmaster + 1
+    onlyquitonempty 				This patch makes it so dwm will only exit via quit() if no windows are open
+    pango 							Adds pango support for the status bar
+    pertag 							More general approach to taglayouts patch. This patch keeps layout, mwfact, barpos and nmaster per tag
+    pledge 							Restrict system operations on OpenBSD using pledge(2).
+    push 							pushup and pushdown provide a way to move clients inside the clients list
+    pwkl 							Implements per-window keyboard layout support in dwm
+    removeborder 					Remove the border when there is only one window visible
+    reorganizetags 					Shifts all clients per tag to leftmost unoccupied tags
+    resetlayout 					Resets the layout and mfact if there is only one client visible
+    resizecorners 					With this Patch, the mouse is warped to the nearest corner and you resize it from there
+    restartsig 						dwm can now be restarted via MOD+CTRL+SHIFT+Q or by kill -HUP dwmpid
+    rmaster 						Swaps the master/stack area,master-client on the right  stack-clients appear on the left
+    rotatestack 					Stack rotation moves a client from the bottom to the top of the stack (or the other way round)
+    ru gaps 						Adds gaps like tilegap that are resizeable at runtime like fullgaps, but like uselessgap
+    save floatrules 				This patch saves size and position of every floating window before it is forced into tiled mode
+    scheme switch 					Allows you defining more then one color-Scheme in the colors array in config.def.h
+    scratchpad 						The scratchpad patch allows you to spawn or restore a floating terminal window
+    scratchpads 					Enables multiple scratchpads, each with one asigned window
+    script tags 					This allows any bar that reads stdin to be used in conjuction with dwm
+    selectivefakefullscreen 		Allows a specific application to fake a full screen while the rest behave as usual
+    selfrestart 					Restart dwm without the unnecessary dependency of an external script
+    setborderpx 					This patch allows you to change border pixels at runtime
+    setstatus 						Enables to set the status with dwm itself
+    showselmon 						Shows which monitor is currently selected
+    single tagset 					This patch addresses the multi-monitor setup
+    singularborders 				Singular borders changes the way DWM handles the borders
+    sizehints 						This patch makes dwm obey even "soft" sizehints for new clients
+    smartborders 					Inspired by the xmonad feature of the same name
+    spawn cwd 						Spawns programs from currently focused client's working directory
+    stacker 						This patch provides comprehensive utilities for managing the client stack
+    stackmfact 						stackmfact enables you to vertically resize clients in the stack
+    staticstatus 					This patch forces your status bar to stay put on a single monitor in a multi-monitor setup
+    status2d 						Status2d allows colors and rectangle drawing in your DWM status bar
+    statusallmons 					This patch draws and updates the statusbar on all monitors
+    statusbutton 					Adds a clickable button to the left hand side of the statusbar
+    statuscmd 						Ability to execute shell commands based on the mouse button and position when clicking the status bar
+    statuscolors 					Enables colored text in the status bar
+    statuspadding 					This makes the amount of horizontal and vertical padding in the status bar into configurable 
+    stdin 							This patch is mainly a workaround for the freezing issue caused by XSelectInput
+    sticky 							Press MODKEY+s (default) to make a client 'sticky'
+    swallow 						This patch adds "window swallowing" to dwm as known from Plan 9's windowing system rio
+    swapfocus 						This patch makes it possible to switch focus with one single shortcut
+    swaptags 						Allow swapping the contents of the currently selected tag with tag N by selecting Mod4+Shift+N
+    switchcol 						Switch focus between the 2 columns (master or stack) easily
+    switchtotag 					Adds a rule option to switch to the configured tag when a window opens
+    systray 						A simple system tray implementation
+    tab 							Transforms the monocle layout into a ''tabbed'' layout
+    tagall 							Shortcut to move all (floating) windows from one tag to another
+    taggrid 						Ability to place tags in rows like in many other window managers like xfce ore OpenBox
+    tagintostack 					tagintostack new clients attach into the stack area when you toggle a new tag into view
+    tagothermonitor 				Functions and keybindings to tag a window to a desired monitor
+    tapresize 						Allows to resize windows with touchpad
+    three column 					Three Column Layout
+    tilegap 						Window gaps for the tile layout 
+    titlecolor 						Adds a new color scheme used by the window title in the bar
+    transfer 						These two patches, transfer and transferall, let you transfer clients between the master and stack
+    unfloatvisible 					unfloatvisible resets isfloating on any visible windows that have it set
+    urgentborder 					This patch makes borders of "urgent" windows a different color
+    uselessgap 						Adds "useless gaps" around windows
+    vanitygaps 						Adds (inner) gaps between client windows and (outer) gaps between windows and the screen edge
+    viewontag 						Follow a window to the tag it is being moved to 
+    vtcolors 						This patch adds the ability for dwm to read colors from the linux virtual console
+    warp 							This patch warps the mouse cursor to the center of the currently focused window
+    winview 						With the winview patch the window to unhide can be selected from the all-window view
+    xkb 							This patch replaces main functionality of xxkb
+    xrdb 							Allows dwm to read colors from xrdb (.Xresources) at run time
+    xresources 						This patch allows to handle settings from Xresource
+    xtile 							This patch implements a generalization of the tile layout 
+    zoomswap 						This patch swaps the current window (C) with the previous master (P) when zooming
