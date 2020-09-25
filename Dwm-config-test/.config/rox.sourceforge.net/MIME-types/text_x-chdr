@@ -1,0 +1,2 @@
+#! /bin/sh
+exec leafpad "$@" & chtag 4
