@@ -1,0 +1,3 @@
+#!/bin/bash
+gotag 6
+pinta "$@"
