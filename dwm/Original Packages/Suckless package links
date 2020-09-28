@@ -6,3 +6,9 @@ dwm			wget https://dl.suckless.org/dwm/dwm-6.2.tar.gz
 st			wget https://dl.suckless.org/st/st-0.8.tar.gz
 dmenu		wget https://dl.suckless.org/tools/dmenu-5.0.tar.gz
 
+
+
+
+
+cp /etc/x11/xinit/xinitrc  .xinitrc
+tar -xzvf  
