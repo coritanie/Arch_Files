@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function run {
-  if ! pgrep $1 ;
+ if ! pgrep $1 ;
   then
     $@&
   fi
@@ -20,7 +20,7 @@ picom --config $HOME/.config/picom.conf &
 run "numlockx on"
 run "volumeicon"
 ~/dwmbar/dwmbar.sh &   # script for updating the status bar
-~/.config/sxhkdr/sxhkdrc
+sxhkd -c ~/.config/sxhkd/sxhkdrc &
 dunst &    # similar as xfce4-notifyd
 #run "nitrogen --restore"
 #run "conky -c $HOME/.config/awesome/system-overview"
