@@ -215,7 +215,7 @@ static void movemouse(const Arg *arg);
 static Client *nexttiled(Client *c);
 static void pop(Client *);
 static void propertynotify(XEvent *e);
-static void quit(const Arg *arg);
+/*static void quit(const Arg *arg);*/
 static Monitor *recttomon(int x, int y, int w, int h);
 static void removesystrayicon(Client *i);
 static void resize(Client *c, int x, int y, int w, int h, int interact);
@@ -278,7 +278,7 @@ static Systray *systray =  NULL;
 static const char autostartblocksh[] = "autostart_blocking.sh";
 static const char autostartsh[] = "autostart.sh";
 static const char broken[] = "broken";
-static const char dwmdir[] = "dwm";
+static const char dwmdir[] = "arco-dwm";
 static const char localshare[] = ".config";
 static char stext[256];
 static int screen;
@@ -1387,12 +1387,13 @@ propertynotify(XEvent *e)
 			updatewindowtype(c);
 	}
 }
-
+/*
 void
 quit(const Arg *arg)
 {
 	running = 0;
 }
+*/
 
 Monitor *
 recttomon(int x, int y, int w, int h)
